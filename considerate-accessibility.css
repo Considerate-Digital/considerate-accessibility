@@ -1,0 +1,277 @@
+@keyframes slideup {
+  from {
+    margin-bottom: -16rem;
+
+  }
+  to {
+    margin-bottom: 0rem;
+  }
+}
+
+.considerate-access-menu {
+  position: fixed;
+  height:  17rem;
+  bottom: 0;
+  margin-bottom: -17rem;
+  right: 0;
+  left: 0;
+  padding: calc(0.2rem *3) calc(0.2rem *4);
+  border-top: 2px solid black;
+  background-color: white;
+  z-index: 999;
+}
+
+.considerate-access-menu-open {
+  animation-name:slideup;
+  animation-duration:1s;
+  animation-timing-function: cubic-bezier(0.2, 0.35, 0.62, 0.82);
+  margin-bottom: 0rem;
+}
+.considerate-access-menu-top-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.considerate-access-menu-button, .considerate-access-menu-button:hover, .considerate-access-menu-button:focus, .considerate-access-menu-button:visited {
+  margin: 0rem;
+  padding: 0rem;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 99;
+  height: 3rem;
+  width: 3rem;
+  outline-color: none;
+  border: none;
+  background-color: transparent;
+}
+.considerate-access-menu-button:hover {
+  background-color: transparent;
+}
+.considerate-access-menu-button img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.considerate-access-menu-button-close, .considerate-access-menu-button-close:hover {
+  border: 2px solid black;
+  border-radius: 0rem;
+  outline: none;
+  margin: 0rem;
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 0.6rem;
+}
+
+.considerate-access-menu-close-icon-container {
+  height: 100%;
+  background-color: transparent !important;
+}
+.considerate-access-menu-close-icon {
+  display: block;
+  width: 1.4rem;
+  height: 0.2rem;
+  background-color: black !important;
+  margin: calc(0.2rem *2) 0rem;
+}
+
+.considerate-access-menu button:focus { 
+  outline-color: black;
+}
+
+.considerate-access-menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem;
+}
+
+.considerate-access-menu li {
+  padding: calc(0.2rem * 1);
+}
+.considerate-access-menu li:before {
+  display: none;
+}
+
+.considerate-access-menu-title {
+  font-size: 1.25rem;
+  padding: 0.2rem;
+  margin: 0rem;
+  line-height: 1.25;
+}
+.considerate-access-menu ul li {
+  list-style: none;
+}
+.considerate-access-menu ul li label {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0rem;
+  margin: 0.2rem 0rem;
+}
+.considerate-access-menu [role="switch"] {
+  border: 2px solid black;
+  border-radius: 0rem;
+  background-color: white;
+  padding: 0rem;
+  margin: 0;
+  margin-top: 0.2rem;
+  display: block;
+}
+.considerate-access-menu [role="switch"]:hover {
+  border: 2px solid black;
+}
+
+.considerate-access-menu [role="switch"] span {
+  padding: 0rem calc(0.2rem *2);
+  font-size: 1.8rem; 
+  line-height: 1.2;
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+}
+
+.considerate-access-menu [role="switch"][aria-checked="false"] span:first-child {
+  background: white;
+  color: black;
+}
+.considerate-access-menu [role="switch"][aria-checked="false"] span:last-child {
+  background: black;
+  color: white;
+}
+.considerate-access-menu [role="switch"][aria-checked="true"] span:first-child {
+  background: black;
+  color: white;
+}
+.considerate-access-menu [role="switch"][aria-checked="true"] span:last-child {
+  background: white;
+  color: black;
+}
+
+.considerate-access-menu .considerate-access-backlink {
+  margin: 0.5rem 0rem;
+  padding: 0rem;
+  text-align: right;
+  font-size: 0.775rem;
+}
+
+
+@media only screen and (min-width: 32rem) {
+  @keyframes slideup {
+    from {
+      margin-bottom: -7rem;
+    }
+    to {
+      margin-bottom: 0rem;
+    }
+  }
+
+  .considerate-access-menu {
+    height: 12.2rem;
+    margin-bottom: -13.5rem;
+  }
+  .considerate-access-menu-open {
+    margin-bottom: 0rem;
+  }
+  .considerate-access-menu-title {
+    font-size: 2rem;
+  }
+
+  .considerate-access-menu-button, .considerate-access-menu-button:hover, .considerate-access-menu-button:focus, .considerate-access-menu-button:visited {
+    height: 5rem;
+    width: 5rem;
+  }
+
+.considerate-access-menu .considerate-access-backlink {
+  font-size: 0.875rem;
+}
+
+
+}
+
+/* special rules */
+
+/* calm */
+.considerate-calm, .considerate-calm *:not(button, button *, .considerate-accessibility-menu-wrapper, .considerate-accessibility-menu-wrapper *, .considerate-access-menu-button,  .considerate-access-menu .considerate-access-menu-button-close *, .considerate-access-menu [role="switch"] *, .considerate-access-menu [role="switch"]) 
+  {
+  background-color: GhostWhite !important;
+  /*
+  backdrop-filter: brightness(4) !important;
+  */
+  color:  #1b2631 !important;
+}
+  .considerate-calm h1,
+  .considerate-calm h2,
+  .considerate-calm h3,
+  .considerate-calm h4,
+  .considerate-calm h5,
+  .considerate-calm h6,
+  .considerate-calm p,
+  .considerate-calm div,
+  .considerate-calm nav,
+  .considerate-calm footer,
+  .considerate-calm input,
+  .considerate-calm textarea,
+  .considerate-calm .footer,
+  .considerate-calm .header
+ {
+    background-color: transparent !important;
+ }
+.considerate-calm .considerate-access-menu [role="switch"][aria-checked="true"] span:last-child {
+  background-color: GhostWhite;
+  color:  #1b2631;
+}
+.considerate-calm .considerate-access-menu [role="switch"][aria-checked="true"] span:first-child {
+  background-color:  #1b2631;
+  color: GhostWhite;
+}
+.considerate-calm .considerate-access-menu [role="switch"][aria-checked="false"] span:first-child {
+  background-color: GhostWhite;
+  color:  #1b2631;
+}
+.considerate-calm .considerate-access-menu [role="switch"][aria-checked="false"] span:last-child {
+  background-color:  #1b2631;
+  color: GhostWhite;
+}
+.considerate-calm img:not(.considerate-access-menu-button *) {
+  filter: grayscale(20%) brightness(0.7) !important;
+}
+
+/* focus */
+.considerate-focus-letter {
+  font-weight: inherit;
+}
+.considerate-focus-bold-letter {
+  font-weight: 700;
+  line-height: 2;
+  font-size: inherit;
+}
+
+/* still */
+
+@font-face {
+  font-family: "dyslexiaFont";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("headerFont"), url("/considerate-accessibility/fonts/OpenDyslexic3-Regular.woff2") format("woff2");
+}
+
+.considerate-readable p {
+  font-family: dyslexiaFont;
+  font-size: 1.2rem;
+  line-height: 2;
+  line-height: 2
+}
+
+/* scale */
+.considerate-super p {
+  font-size: 2rem;
+  line-height: 2;
+}
