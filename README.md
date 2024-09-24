@@ -1,13 +1,12 @@
 # The Considerate Toolbar
 
-The considerate toolbar is free and open to all. Once installed, it works on any website and any modern browser – just click on the icon to get started.
+The considerate toolbar is free and open to all. Once installed, it works on any website and any modern browser.
+
 We are keen to start a discussion around AI in web accessibility, so if you have any feedback, please say hello – we’re still in Beta so would love to hear your thoughts.
-Our considerate toolbar offers four simple toggle switches - Still, Calm, Focus and Scale - and each one of these modes can be used in conjunction with the others.
+
+Our considerate toolbar offers four simple toggle switches - **Still**, **Calm**, **Focus** and **Scale** - and each one of these modes can be used in conjunction with the others.
 
 ## Features
-
-Our considerate toolbar offers four simple toggle switches – Still, Calm, Focus and Scale – and each one of these modes can be used in conjunction with the others.
-The considerate toolbar is free and open to all. Once installed, it works on any website and any modern browser.
 
 ### Still, Calm, Focus and Scale: Why these modes?
 
